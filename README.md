@@ -1,7 +1,7 @@
 <!-- BE SURE TO UPDATE NAME AND LINK TO DOC -->
 
 # 18468-advertising-ssai-plugin
-For more information about this sample see: .
+For more information about this sample see: https://support.brightcove.com/advertising-ssai-plugin.
 
 <p>The purpose and structure of files in this repo are:</p>
 

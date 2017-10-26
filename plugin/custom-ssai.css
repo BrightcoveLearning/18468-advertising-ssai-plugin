@@ -1,0 +1,5 @@
+/* Set the size of the container for the video player and tabbed playlist */
+.video-js {
+    width: 640px;
+    height: 360px;
+}

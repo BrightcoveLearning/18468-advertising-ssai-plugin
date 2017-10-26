@@ -3,12 +3,43 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Untitled Document</title>
+  <title>Advertising with the SSAI Plugin</title>
+  <link href="//players.brightcove.net/videojs-ssai/1/videojs-ssai.css" rel="stylesheet">
+	<style>
+    .video-js {
+        width: 640px;
+        height: 360px;
+    }
+  </style>
 </head>
 
 <body>
+  <video id="myPlayerId"
+		data-account="1752604059001"
+		data-player="default"
+		data-embed="default"
+		data-application-id
+		class="video-js"
+		controls></video>
+	<script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
+	<script src="//players.brightcove.net/videojs-ssai/1/videojs-ssai.js"></script>
 
+	<script>
+		var adConfigId = "d6190656-2095-4ff3-8afe-1a0b60d67ed2";
+		var myPlayer = videojs('myPlayerId');
+		myPlayer.ssai();
+
+		myPlayer.catalog.getVideo("5625751316001", function(error, video) {
+			if (error) {
+				myPlayer.error(error);
+			} else {
+				myPlayer.catalog.load(video);
+				myPlayer.play();
+			}
+		}, adConfigId);
+
+	</script>
 
 </body>
 

@@ -3,12 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Untitled Document</title>
+  <title>Advertising with the SSAI Plugin</title>
+  <link href="custom-ssai.css" rel="stylesheet">
 </head>
 
 <body>
+  <video id="myPlayerId"
+		data-account="1752604059001"
+		data-player="default"
+		data-embed="default"
+		data-application-id
+		class="video-js"
+		controls></video>
+	<script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
-
+  <script type="text/javascript" src="custom-ssai.js"></script>
+  <script>videojs('myPlayerID').customSSAI();</script>
 
 </body>
 
