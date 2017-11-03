@@ -1,8 +1,8 @@
 videojs.registerPlugin('customSSAI', function() {
-    // get a reference to the player
-    var myPlayer = this;
-    // replace the value below with your ad config id
-    var adConfigId = "d6190656-2095-4ff3-8afe-1a0b60d67ed2";
+    // get a reference to the player and replace the value below with your ad config id
+    var myPlayer = this,
+        adConfigId = "d6190656-2095-4ff3-8afe-1a0b60d67ed2";
+        
     // initialize the SSAI plugin
 		myPlayer.ssai();
 
