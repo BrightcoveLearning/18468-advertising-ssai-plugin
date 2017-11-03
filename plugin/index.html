@@ -4,10 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Advertising with the SSAI Plugin</title>
+  <!-- styles for the SSAI plugin -->
+  <link href="//players.brightcove.net/videojs-ssai/1/videojs-ssai.css" rel="stylesheet">
+  <!-- styles for your custom player -->
   <link href="custom-ssai.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- player embed code with added id attribute -->
   <video id="myPlayerId"
 		data-account="1752604059001"
 		data-player="default"
@@ -17,6 +21,10 @@
 		controls></video>
 	<script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
+  <!-- script for the SSAI plugin -->
+	<script src="//players.brightcove.net/videojs-ssai/1/videojs-ssai.js"></script>
+
+  <!-- your custom script -->
   <script type="text/javascript" src="custom-ssai.js"></script>
   <script>videojs('myPlayerID').customSSAI();</script>
 
