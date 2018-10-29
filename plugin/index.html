@@ -12,21 +12,21 @@
 
 <body>
   <!-- player embed code with added id attribute -->
-  <video id="myPlayerId"
+  <video-js id="myPlayerId"
 		data-account="1752604059001"
 		data-player="default"
 		data-embed="default"
 		data-application-id
 		class="video-js"
-		controls></video>
-	<script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
+		controls></video-js>
+	<script src="https://players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
   <!-- script for the SSAI plugin -->
 	<script src="//players.brightcove.net/videojs-ssai/1/videojs-ssai.js"></script>
 
   <!-- your custom script -->
   <script type="text/javascript" src="custom-ssai.js"></script>
-  <script>videojs('myPlayerID').customSSAI();</script>
+  <script>videojs.getPlayer('myPlayerID').customSSAI();</script>
 
 </body>
 
